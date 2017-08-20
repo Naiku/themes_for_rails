@@ -23,9 +23,9 @@ module ThemesForRails
         include ThemesForRails::ActionController
       end
 
-      ActiveSupport.on_load(:action_mailer) do
-        include ThemesForRails::ActionMailer
-      end
+#       ActiveSupport.on_load(:action_mailer) do
+#         include ThemesForRails::ActionMailer
+#       end
     end
 
     rake_tasks do
