@@ -56,5 +56,5 @@ require 'themes_for_rails/config'
 require 'themes_for_rails/common_methods'
 require 'themes_for_rails/action_view'
 require 'themes_for_rails/action_controller'
-require 'themes_for_rails/action_mailer'
+# require 'themes_for_rails/action_mailer' # Drop support until for Rails 5 + Ruby 2.4 compatibility `undefined method `alias_method_chain' for ActionMailer::Base:Class` 
 require 'themes_for_rails/railtie'
