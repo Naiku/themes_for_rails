@@ -7,7 +7,8 @@ module ThemesForRails
 
     included do
       include ThemesForRails::ActionController
-      alias_method_chain :mail, :theme
+      alias_method :mail_without_theme, :mail
+      alias_method :mail, :mail_with_theme
     end
 
     def mail_with_theme(headers = {}, &block)
